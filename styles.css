@@ -1,0 +1,107 @@
+html{
+  scroll-behavior: smooth;
+}
+ 
+header{
+  overflow:hidden;
+  background-color:#22b353; 
+}
+ 
+.navbar{
+  padding: 1px 8%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 20px; 
+  text-decoration:none;
+  text-transform:uppercase; 
+  color: #b1152a; 
+  font-weight:bold;
+  padding: 20px 10px; 
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: #07066f;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background:#b1152a;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.contact {
+  background: #07374a;
+  position: relative;
+  height: 250px;
+}
+
+.contact-content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 37px;
+  font-weight: 800;
+  font-style: bold;
+  color: #ed5241;
+  padding-bottom: 0.2px;
+}
+
+.contact-content .mail {
+  color: #f0f0e6;
+  padding-bottom: 0.2px;
+  font-size: 1rem;
+}
+
+.contact-content .links {
+  color: #ff4040;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #a193f5;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover {
+  color: #f0f0e6;
+}
+
+.copyright{
+  width: 98.5%;
+  text-align: center;
+  padding: 2px 10px;
+  background: grey;
+  font-weight: 300;
+}
